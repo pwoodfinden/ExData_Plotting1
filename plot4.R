@@ -34,7 +34,7 @@ lines(epc1$DateTime, epc1$Sub_metering_1, type = "l", col = "black")
 lines(epc1$DateTime, epc1$Sub_metering_2, type = "l", col = "red")
 lines(epc1$DateTime, epc1$Sub_metering_3, type = "l", col = "blue")
 legend("topright", lwd = c(1, 1, 1), col = c("black", "red", "blue"), 
-       legend = c("sub_metering_1", "sub_metering_2", "sub_metering_3"))
+       legend = c("sub_metering_1", "sub_metering_2", "sub_metering_3"), cex = 0.75, border = "white", bty = "n")
 
 plot(epc1$DateTime, epc1$Voltage, type = "n", xlab = "datetime", ylab = "Voltage")
 lines(epc1$DateTime, epc1$Voltage, type = "l")
